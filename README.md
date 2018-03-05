@@ -96,3 +96,12 @@ Matches: snb : Note this must have a space at the end.
 
 An edge case is there must be a space at the end. 
 ```
+
+
+#### Metacharacters inside character sets.
+
+All metacharacter inside the character set are escaped. 
+
+Exceptions are for ], - ,^, \
+
+The above metacharacters need to be explicitly escaped. 
