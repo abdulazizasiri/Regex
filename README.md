@@ -12,7 +12,7 @@ These are some ways to use regex:
 
 - The wildcard character is the dot (.) character. It accepts any character except the newline. 
  
-  _Examples:_
+  _Example 1:_
   ```
   /h.t/ This matches hat, hot or any one character.This will not match heat. It is more than one character. 
   
@@ -24,16 +24,19 @@ Warning: The wild character can fit any character even characters that you do no
 - Escaping character: \
 You can use it to escape metacharacters in regex. 
 
-_Examples:_
+_Example 1:_
 
 ```
 /9\.00 /: This is an example for escaping a wildcard character. 
 ```
 
-'''
+_Example 2:_
+
 Escaping a backslash char
 
+```
 /\\Desktop\
-'''
+
+```
 
 
