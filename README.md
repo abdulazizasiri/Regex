@@ -52,3 +52,15 @@ Escaping a backslash char
 ASCII or ANSI
 
 
+
+#### Character Set
+
+ - []. it uses the opening bracket [  and closing ]. In between, you can have any characters, but when matching, it only chooses one character inside the character set. 
+ 
+ _Example 1:_
+ 
+ ```
+ /gr[ae]y/
+  matches: gray or grey NOT great because it only chooses one char inside the charset.  
+ ```
+
