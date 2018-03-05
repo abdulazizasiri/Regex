@@ -105,3 +105,16 @@ All metacharacter inside the character set are escaped.
 Exceptions are for ], - ,^, \
 
 The above metacharacters need to be explicitly escaped. 
+
+
+#### shorthand character set: 
+
+
+| Sharthand        | Meaning           | equivalent  |
+| ------------- |:-------------:| -----:|
+| \d     | Digit | [0-9]
+| \w     | word character      |   [a-zA-Z0-9_] |
+| \s | whitespace     |    [ \t \r\n] |
+| \D | Not digit     |    [^0-9] |
+| \W | Not word character     |    [^a-zA-Z0-9_] |
+| \S | Not whitespace     |    [^ \t \r\n] |
