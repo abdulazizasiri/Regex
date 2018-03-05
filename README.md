@@ -16,3 +16,5 @@ The wildcard character is the dot (.) character. It accepts any character except
   /h.t/ This matches hat, hot or any one character.This will not match heat. It is more than one character. 
   
   ```
+Warning: The wild character can fit any character even characters that you do not want so sometimes it is best to escape it. 
+
