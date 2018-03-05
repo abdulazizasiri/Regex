@@ -30,4 +30,10 @@ _Examples:_
 /9\.00 /: This is an example for escaping a wildcard character. 
 ```
 
+'''
+Escaping a backslash char
+
+/\\Desktop\
+'''
+
 
