@@ -38,5 +38,17 @@ Escaping a backslash char
 /\\Desktop\
 
 ```
+- Special character: 
+
+ Spaces: literal space
+
+ tabs: \t 
+ 
+ Line returns (\r, \n, or \r\n)
+ 
+ Non-printable characters
+ the bell (\a), escape (\e), form feed (\f), vertical tab (\v)
+
+ASCII or ANSI
 
 
