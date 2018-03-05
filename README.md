@@ -76,3 +76,23 @@ a[a-z]t
 matches: abt, act, abt, aat But not: abbbt
 ```
 
+#### Negative charcter set ^
+
+
+
+
+NOTE: the carrot used differently in regex, and in each case, it has a  different meaning. Here is the first meaning when it is used with a character set. 
+
+
+. Negate a character set. it means include any things except whatever inside the charcter set. 
+
+
+_Example 2:_
+
+```
+[^aeiou]: Anything Except these 
+
+Matches: snb : Note this must have a space at the end. 
+
+An edge case is there must be a space at the end. 
+```
