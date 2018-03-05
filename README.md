@@ -8,7 +8,7 @@ These are some ways to use regex:
 
 ### Metacharacters
 
-#### Wild card
+#### Wild card .
 
 - The wildcard character is the dot (.) character. It accepts any character except the newline. 
  
@@ -53,7 +53,7 @@ ASCII or ANSI
 
 
 
-#### Character Set
+#### Character Set []
 
  - []. it uses the opening bracket [  and closing ]. In between, you can have any characters, but when matching, it only chooses one character inside the character set. 
  
@@ -63,4 +63,16 @@ ASCII or ANSI
  /gr[ae]y/
   matches: gray or grey NOT great because it only chooses one char inside the charset.  
  ```
+
+#### Character ranges -
+
+Note: The metacharacter used in character ranges "-" works only inside the character set. Otherwise, it is used as a normal character when typed outside the character set.  
+
+_example 1:_
+
+```
+a[a-z]t
+
+matches: abt, act, abt, aat But not: abbbt
+```
 
