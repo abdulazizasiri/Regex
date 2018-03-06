@@ -161,4 +161,14 @@ These characters affect whatever comes before them.
 
 The + sign requires that the char before it MUST exist. 
 
+_Examples:_
+
+- /apples*/ This matches  apple, apples, or applessssss  (0 or more)
+
+- /apples+/ This matches apples or applessssss but NOT apple (has to be one or more)
+
+- /apples?/ This matches apples or apple but not applessss (0 or one Only)
+
+- /colou?r/ This matches color or colour (optional)
+
 
