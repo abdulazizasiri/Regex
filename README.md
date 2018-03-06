@@ -147,3 +147,18 @@ a --> is it not a digit? Yes (matches)
 .
 ..
 ```
+
+
+#### Repetition characters: 
+
+These characters affect whatever comes after them.
+
+| Character        | Meaning    |     
+| ------------- |:-------------:|
+| *             | preceding item zero or more times
+| +             | preceding item one or more times
+| ?             | preceding item zero or one time
+
+The + sign requires that the char after it MUST exist. 
+
+
