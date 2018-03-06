@@ -118,3 +118,15 @@ The above metacharacters need to be explicitly escaped.
 | \D | Not digit     |    [^0-9] |
 | \W | Not word character     |    [^a-zA-Z0-9_] |
 | \S | Not whitespace     |    [^ \t \r\n] |
+
+
+
+_Examples:_
+
+\w\w\w\w\: Matches: "ABCD" "1234" "A_1_"
+
+\d\d\d\d: Matches: "2017", but not "text".
+\w\s\w\w: Matchses: "I am" But not "Am I" 
+[\w\-]: Mathces word character or hyphen
+[^\d]: same as \D and [^0-9]
+
