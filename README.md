@@ -151,7 +151,7 @@ a --> is it not a digit? Yes (matches)
 
 #### Repetition characters: 
 
-These characters affect whatever comes after them.
+These characters affect whatever comes before them.
 
 | Character        | Meaning    |     
 | ------------- |:-------------:|
@@ -159,6 +159,6 @@ These characters affect whatever comes after them.
 | +             | preceding item one or more times
 | ?             | preceding item zero or one time
 
-The + sign requires that the char after it MUST exist. 
+The + sign requires that the char before it MUST exist. 
 
 
