@@ -122,11 +122,28 @@ The above metacharacters need to be explicitly escaped.
 
 
 _Examples:_
-
+```
 \w\w\w\w\: Matches: "ABCD" "1234" "A_1_"
-
 \d\d\d\d: Matches: "2017", but not "text".
 \w\s\w\w: Matchses: "I am" But not "Am I" 
 [\w\-]: Mathces word character or hyphen
 [^\d]: same as \D and [^0-9]
+```
 
+Be careful In these example cases
+
+```
+[^\d\s] : It is not the same as [\D\S]
+
+It  means: It is not a digit OR white space character
+
+[\D\S]: it means, it is either a digit or NOT space char. :(
+
+123-abc-^% : Each char is either a not space or a not digit: 
+
+1---> is it not a digit? NO, is it not a space? Yes (matches)
+a --> is it not a digit? Yes (matches)
+.
+.
+..
+```
