@@ -210,3 +210,20 @@ _The third syntax for using them: _
 
 
 #### Greedy Expressions
+
+
+.* or .+ . I will add more to this. 
+
+
+
+#### Lazy Expressions
+
+This uses ? with repetiyon 
+
+Note: ? used here to make the match process lazy. 
+
+exmaple: .*? Lazy
+
+
+Note: By defalut regex are eager and greedy
+
