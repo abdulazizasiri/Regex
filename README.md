@@ -227,3 +227,24 @@ exmaple: .*? Lazy
 
 Note: By defalut regex are eager and greedy
 
+
+
+#### Grouping. ()
+
+This is used to group things that you want to apply on any of the metacharacters (except the character set)
+
+_For example:_
+
+```
+(abc)+ , this will match abc, abcabc abcabcabcabc unlinke before where when we apply the metacharacer we get only abc abccccc
+
+we also can say: 
+
+
+(in)?dependent: This will match: independent and dependent. 
+
+This is a pretty straightforward metacharacter. 
+
+```
+
+
