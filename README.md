@@ -262,3 +262,8 @@ this will match apple or orange or carrot.
 
 Pretty straightforward metacharacter. 
 ```
+
+
+Need to learn the efficiency in alternation meta. 
+
+### Anchors metachars.  ^ (Without using it inside [] ), $
