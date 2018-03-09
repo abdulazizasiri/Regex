@@ -248,3 +248,17 @@ This is a pretty straightforward metacharacter.
 ```
 
 
+### Alternation: |
+
+It is bascially the or operator. 
+
+_Examples:_
+
+```
+apple|orange|carrot
+
+
+this will match apple or orange or carrot. 
+
+Pretty straightforward metacharacter. 
+```
