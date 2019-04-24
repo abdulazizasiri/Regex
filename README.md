@@ -161,4 +161,109 @@ These characters affect whatever comes before them.
 
 The + sign requires that the char before it MUST exist. 
 
+_Examples:_
 
+- /apples*/ This matches  apple, apples, or applessssss  (0 or more)
+
+- /apples+/ This matches apples or applessssss but NOT apple (has to be one or more)
+
+- /apples?/ This matches apples or apple but not applessss (0 or one Only)
+
+- /colou?r/ This matches color or colour (optional)
+
+
+#### Quantified repetition
+
+It uses the metacharacter {}. 
+
+_The first syntax for using them: _
+
+- {min, max}: min and max are positive numbers. min must always be included, but max is optional. 
+
+ _Example for this case:_
+```
+  \d{4,8}: This means a digit a number repeated from 4 to 8: This matches 1234 or 12341222 but not 3  
+```
+
+
+_The second syntax for using them: _
+
+- {min}: Macthesrepeated chars with exactly min amount
+
+ _Example for this case:_
+ ```
+ \d{3}: 123 
+ ```
+ 
+ 
+_The third syntax for using them: _
+
+
+- {min, }: This matches character repeated min times or more (infinitely)
+
+ _Example for this case:_
+
+```
+\d{2,} : 12 matches , 2222222 mathces 
+```
+
+
+
+#### Greedy Expressions
+
+
+.* or .+ . I will add more to this. 
+
+
+
+#### Lazy Expressions
+
+This uses ? with repetiyon 
+
+Note: ? used here to make the match process lazy. 
+
+exmaple: .*? Lazy
+
+
+Note: By defalut regex are eager and greedy
+
+
+
+#### Grouping. ()
+
+This is used to group things that you want to apply on any of the metacharacters (except the character set)
+
+_For example:_
+
+```
+(abc)+ , this will match abc, abcabc abcabcabcabc unlinke before where when we apply the metacharacer we get only abc abccccc
+
+we also can say: 
+
+
+(in)?dependent: This will match: independent and dependent. 
+
+This is a pretty straightforward metacharacter. 
+
+```
+
+
+### Alternation: |
+
+It is bascially the or operator. 
+
+_Examples:_
+
+```
+apple|orange|carrot
+
+
+this will match apple or orange or carrot. 
+
+Pretty straightforward metacharacter. 
+```
+
+
+Need to learn the efficiency in alternation meta. 
+
+### Anchors metachars.  ^ (Without using it inside [] ), $
